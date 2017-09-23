@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css?family=Andika');
+@import url('https://fonts.googleapis.com/css?family=Bad+Script');
+
+*::-webkit-input-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*:-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*::-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*:-ms-input-placeholder {
+	color: #666;
+	opacity: 1;
+}
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+	
+}
+body input:required:valid,
+body textarea:required:valid {
+	
+}
+
+html.js .loader {
+	background: none repeat scroll 0 0 #ffffff;
+	bottom: 0;
+	height: 100%;
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+	width: 100%;
+	z-index: 9999;
+}
+html.js .loader_inner {
+	background-image: url("../img/preloader.gif");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-color: #fff;
+	height: 60px;
+	width: 60px;
+	margin-top: -30px;
+	margin-left: -30px;
+	left: 50%;
+	top: 50%;
+	position: absolute;
+}
+
+
+
+*{
+	font-family: 'Andika', sans-serif;
+}
+
+body {
+	font-size: 16px;
+	min-width: 320px;
+	position: relative;
+	line-height: 1.6;
+	overflow-x: hidden;
+}
+img{
+	max-width: 100%;
+}
+.hidden {
+	display: none;
+}
+
+/* header */
+.banner{
+	text-align: center;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+.header_contacts{
+	margin-top: -15px;
+}
+.phone{
+	color: #000;
+    font-weight: bold;
+    font-size: 1.3em;
+    height: 64px;
+    line-height: 64px;
+}
+.phone .fa{
+	margin-right: 5px;
+}
+
+.social{
+	font-size: 2em;
+	text-align: right;
+}
+.social .fa-vk{
+	color: #507299;
+}
+.social .fa-vk:hover{
+	color: #7eabe9;
+	transition: .4s;
+}
+.social .fa-instagram{
+	color: #cd486b;
+}
+.social .fa-instagram:hover{
+	color: red;
+	transition: .4s;
+}
+.social .fa{
+	padding: 0 20px;
+	line-height: 2em;
+
+}
+
+/* Menu */
+.main-mnu li{
+	display: inline-block;
+	position: relative;
+	text-transform: uppercase;
+	font-size: .9em;
+	letter-spacing: .8px;
+}
+.main-mnu .fa{
+	padding-left: 5px;
+}
+.main-mnu li a{
+	color: #222;
+	padding: 1em 9px;
+}
+
+.main-mnu li a:hover{
+	color: #767676;
+	text-decoration: none;
+	transition: .4s;
+}
+.main-mnu .fa{
+	font-size: 1.2em;
+}
+
+/* toggle mnu */
+.toggle-mnu {
+  display: block;
+  width: 28px;
+  height: 28px;
+  margin-top: 14px;
+}
+.toggle-mnu span:after, .toggle-mnu span:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 9px;
+}
+.toggle-mnu span:after {
+  top: 18px;
+}
+.toggle-mnu span {
+  position: relative;
+  display: block;
+}
+.toggle-mnu span, .toggle-mnu span:after, .toggle-mnu span:before {
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  transition: all 0.3s;
+  backface-visibility: hidden;
+  border-radius: 2px;
+}
+.on span {
+  background-color: transparent;
+}
+.on span:before {
+  transform: rotate(45deg) translate(-1px, 0px);
+}
+.on span:after {
+  transform: rotate(-45deg) translate(6px, -7px);
+}
+
+.toggle-mnu{
+	margin: auto;
+}
+
+.hidden-mnu{
+	display: none;
+}
+
+.hidden-mnu li{
+	display: block;
+	padding: 5px 20px;
+}
+
+/* Слайдер */
+
+.slider{
+	margin-top: 30px;
+}
+
+/* New Delivery Sales SendMe */
+.new-info{
+	text-align: center;
+}
+.new-info span{
+	font-family: "Pecita", sans-serif;
+	color: #000;
+	font-size: 2em;
+}
+
+/* Our Hit */
+
+.our-hit img{
+	margin-top: 30px;
+}
+.effect{
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+       -moz-box-shadow: 0 10px 6px -6px #777;
+            box-shadow: 0 10px 6px -6px #777;
+}
+
+/* contact */
+.contact-image{
+	text-align: center;
+	margin: 30px 0;
+}
+.contact-wrap{
+	background: #CCF5E7;
+	padding: 10px 0;
+}
+
+.contact-list{
+	padding-left: 10px;
+}
+
+.contact-list li{
+	list-style-type: none;
+	font-size: 1.2em;
+	margin: 5px 0;
+}
+.contact-list .fa{
+	padding-right: 5px;
+}
+.contact-list .fa-phone{
+	color: #1ebea5;
+}
+.contact-list .fa-envelope-o{
+	
+}
+.contact-list .fa-map-marker{
+	color: #FF054B;
+}
+.contact-list li span{
+	font-family: 'Bad Script', cursive;
+}
+
+
+/* user information */
+.user-information{
+	text-align: center;
+	background: #C7FCEC;
+	border-top: 2px solid #9FE5E5;
+	padding: 20px 0;
+}
+.user-information ul{
+	margin: 0;
+}
+.information li{
+	display: inline-block;
+	position: relative;
+	padding: 0 10px;
+	font-size: 1em;
+	border-left: 1px solid black;	
+}
+.information li:first-child{
+	border: none;
+}
+
+.information li a{
+	color: #222;
+	border-bottom: 1px dashed #aaa;	
+}
+
+.information li a:hover{
+	color: #767676;
+	text-decoration: none;
+	transition: .4s;
+}
+
+/* last-line */
+.last-line{
+	text-align: center;
+	line-height: 30px;
+	background-color: #ccc;
+	font-size: .7em;
+}
